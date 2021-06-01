@@ -9,5 +9,5 @@ def test_p():
 
 def test_p():
     s = '2340'
-    assert leap(s) == 'error'
+    assert l.leap(s) == 'error'
 
