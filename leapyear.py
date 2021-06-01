@@ -1,5 +1,6 @@
 import unittest
-
-def test_pal():
+import l
+def test_leapyear():
     s = 2004
-    assert leap(s) == 'This is a leap year'
+    assert l.leap(s) == 'This is a leap year'
+
