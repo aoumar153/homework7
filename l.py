@@ -4,3 +4,5 @@ def leap(year):
     #print(year)
     if(int(year)% 4 == 0):
         return 'This is a leap year'
+    else: 
+        return 'not a leap year'
