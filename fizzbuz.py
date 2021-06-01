@@ -1,12 +1,12 @@
 import unittest
-
+import f
 def test_fizz(capsys):
-    fizzbuzz()
+    f.fizz()
     
     # Capture stdout so that we can check for things in tests
     # We'll get an array that contains each line in the output (the -1 is to deal with the trailing newline)
     output = capsys.readouterr().out.split('\n')[:-1]
-    for i in output.len():
+    for i in range(len(output)):
         if((i+1) % 3 == 0) :
             if ((i+1) % 5 == 0 ):
                 assert output[i] == 'FizzBuzz'
@@ -20,9 +20,9 @@ def test_fizz(capsys):
                 assert output[i] == s
                 
 def test_buzz(capsys):
-    fizzbuzz()
+    f.fizz()
     output = capsys.readouterr().out.split('\n')[:-1]
-    for i in output.len():
+    for i in range(len(output)):
         if((i+1) % 3 == 0) :
             if ((i+1) % 5 == 0 ):
                 assert output[i] == 'FizzBuzz'
@@ -32,4 +32,4 @@ def test_buzz(capsys):
             if((i+1) % 5 == 0):
                 assert output[i] == 'Buzz'
             else:
-                assert output[i] == i
+                assert output[i] == i+1
